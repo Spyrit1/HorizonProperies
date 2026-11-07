@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Menu, X, ArrowUpRight } from 'lucide-react';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface NavbarProps {
   onOpenConsultation: () => void;
@@ -84,8 +85,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
               ))}
             </nav>
 
-            {/* Zone 3: Primary Action & Phone Link */}
-            <div className="hidden lg:flex items-center gap-4 shrink-0">
+            {/* Zone 3: Primary Action, Phone Link & PWA Install */}
+            <div className="hidden lg:flex items-center gap-3 shrink-0">
+              <PWAInstallButton variant="nav" />
+
               <a
                 href="tel:5552467890"
                 className="flex items-center gap-2 px-4 py-2 text-xs font-medium text-slate-200 border border-white/20 rounded-full hover:border-[#C5A880] hover:text-[#E2CCA6] transition-colors whitespace-nowrap bg-black/20 backdrop-blur-sm"
@@ -145,6 +148,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenConsultation }) => {
           </div>
 
           <div className="pt-6 space-y-4 border-t border-white/10">
+            <div className="flex justify-center">
+              <PWAInstallButton variant="banner" />
+            </div>
             <a
               href="tel:5552467890"
               className="flex items-center justify-center gap-2 w-full py-3 text-sm font-medium border border-white/20 rounded-lg text-slate-200"
