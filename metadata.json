@@ -1,0 +1,6 @@
+{
+  "name": "Horizon Properties - Luxury Real Estate",
+  "description": "Premium luxury real estate agency presenting architectural estates, waterfront villas, and bespoke property advisory.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
